@@ -17,7 +17,12 @@
   "homepage": "https://github.com/Snokke/frontend-project-lvl3#readme",
   "jest": {
     "verbose": true,
-    "testURL": "http://localhost/"
+    "testURL": "http://localhost/",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5"
