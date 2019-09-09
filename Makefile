@@ -19,4 +19,9 @@ lint:
 publish:
 	npm publish
 
+surge:
+	rm -rf dist
+	NODE_ENV=production npx webpack
+	surge --domain rss-reader-snokke.surge.sh dist
+
 .PHONY: test
